@@ -1,0 +1,66 @@
+======================================================================
+MODEL TRAINING SUMMARY - LUNG MODULE
+======================================================================
+
+MODELS TRAINED:
+----------------------------------------------------------------------
+1. Logistic Regression
+2. Random Forest
+3. Support Vector Machine
+
+======================================================================
+EVALUATION METRICS:
+======================================================================
+
+Logistic Regression:
+  - Accuracy:  0.5714
+  - Precision: 0.4048
+  - Recall:    0.5714
+  - F1 Score:  0.4735
+
+Random Forest:
+  - Accuracy:  0.4286
+  - Precision: 0.4571
+  - Recall:    0.4286
+  - F1 Score:  0.4048
+
+Support Vector Machine:
+  - Accuracy:  0.5714
+  - Precision: 0.5000
+  - Recall:    0.5714
+  - F1 Score:  0.4762
+
+======================================================================
+BEST MODEL SELECTION:
+======================================================================
+
+Selected Model: Support Vector Machine
+
+Performance Metrics:
+  - Accuracy:  0.5714
+  - Precision: 0.5000
+  - Recall:    0.5714
+  - F1 Score:  0.4762
+
+Selection Criteria:
+  - Primary: F1 Score (60% weight)
+  - Secondary: Recall (40% weight)
+  - Rationale: In healthcare prediction, minimizing false negatives
+    (high recall) is critical while maintaining overall balance (F1).
+
+======================================================================
+SAVED FILES:
+======================================================================
+
+Model File:  models\lung_model.pkl
+Scaler File: models\lung_scaler.pkl
+
+======================================================================
+NOTES:
+======================================================================
+
+- All features were standardized using StandardScaler
+- Categorical features were label-encoded
+- Missing values were imputed using median strategy
+- The scaler must be applied to new data before prediction
+- Load model and scaler using pickle for inference

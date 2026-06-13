@@ -1,0 +1,66 @@
+======================================================================
+MODEL TRAINING SUMMARY - SURVEY MODULE
+======================================================================
+
+MODELS TRAINED:
+----------------------------------------------------------------------
+1. Logistic Regression
+2. Random Forest
+3. Support Vector Machine
+
+======================================================================
+EVALUATION METRICS:
+======================================================================
+
+Logistic Regression:
+  - Accuracy:  0.9890
+  - Precision: 0.9892
+  - Recall:    0.9890
+  - F1 Score:  0.9885
+
+Random Forest:
+  - Accuracy:  1.0000
+  - Precision: 1.0000
+  - Recall:    1.0000
+  - F1 Score:  1.0000
+
+Support Vector Machine:
+  - Accuracy:  0.9189
+  - Precision: 0.9199
+  - Recall:    0.9189
+  - F1 Score:  0.9154
+
+======================================================================
+BEST MODEL SELECTION:
+======================================================================
+
+Selected Model: Random Forest
+
+Performance Metrics:
+  - Accuracy:  1.0000
+  - Precision: 1.0000
+  - Recall:    1.0000
+  - F1 Score:  1.0000
+
+Selection Criteria:
+  - Primary: F1 Score (60% weight)
+  - Secondary: Recall (40% weight)
+  - Rationale: In healthcare prediction, minimizing false negatives
+    (high recall) is critical while maintaining overall balance (F1).
+
+======================================================================
+SAVED FILES:
+======================================================================
+
+Model File:  models\survey_model.pkl
+Scaler File: models\survey_scaler.pkl
+
+======================================================================
+NOTES:
+======================================================================
+
+- All features were standardized using StandardScaler
+- Categorical features were label-encoded
+- Missing values were imputed using median strategy
+- The scaler must be applied to new data before prediction
+- Load model and scaler using pickle for inference

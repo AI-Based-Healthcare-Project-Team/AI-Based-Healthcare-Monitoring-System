@@ -1,0 +1,66 @@
+======================================================================
+MODEL TRAINING SUMMARY - DIABETES MODULE
+======================================================================
+
+MODELS TRAINED:
+----------------------------------------------------------------------
+1. Logistic Regression
+2. Random Forest
+3. Support Vector Machine
+
+======================================================================
+EVALUATION METRICS:
+======================================================================
+
+Logistic Regression:
+  - Accuracy:  0.9286
+  - Precision: 0.9524
+  - Recall:    0.9286
+  - F1 Score:  0.9336
+
+Random Forest:
+  - Accuracy:  0.8571
+  - Precision: 0.8810
+  - Recall:    0.8571
+  - F1 Score:  0.8571
+
+Support Vector Machine:
+  - Accuracy:  0.7143
+  - Precision: 0.7532
+  - Recall:    0.7143
+  - F1 Score:  0.6929
+
+======================================================================
+BEST MODEL SELECTION:
+======================================================================
+
+Selected Model: Logistic Regression
+
+Performance Metrics:
+  - Accuracy:  0.9286
+  - Precision: 0.9524
+  - Recall:    0.9286
+  - F1 Score:  0.9336
+
+Selection Criteria:
+  - Primary: F1 Score (60% weight)
+  - Secondary: Recall (40% weight)
+  - Rationale: In healthcare prediction, minimizing false negatives
+    (high recall) is critical while maintaining overall balance (F1).
+
+======================================================================
+SAVED FILES:
+======================================================================
+
+Model File:  models\diabetes_model.pkl
+Scaler File: models\diabetes_scaler.pkl
+
+======================================================================
+NOTES:
+======================================================================
+
+- All features were standardized using StandardScaler
+- Categorical features were label-encoded
+- Missing values were imputed using median strategy
+- The scaler must be applied to new data before prediction
+- Load model and scaler using pickle for inference

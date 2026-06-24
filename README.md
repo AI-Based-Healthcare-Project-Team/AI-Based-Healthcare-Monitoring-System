@@ -6,6 +6,22 @@ A comprehensive Python-based system for healthcare monitoring and early disease 
 
 This system enables early detection of various health conditions through data-driven analysis and machine learning. The project currently supports prediction models for nine different health conditions.
 
+## 📸 Application Preview
+
+Experience our intuitive healthcare monitoring interface designed for seamless user interaction and accurate disease prediction.
+
+### Homepage & Dashboard
+![Homepage](assests/homepage.jpeg)
+*Clean, user-friendly interface providing easy access to all health monitoring modules and features*
+
+### AI Health Assistant Chatbot
+![Chatbot Interface](assests/chatbot.jpeg)
+*Intelligent conversational AI assistant for symptom analysis and health guidance*
+
+### Heart Disease Prediction Module
+![Heart Disease Module](assests/heart-model.jpeg)
+*Advanced cardiovascular risk assessment with real-time predictions using trained ML models*
+
 ## 🏥 Disease Modules
 
 The system includes the following disease prediction modules:
@@ -23,10 +39,12 @@ The system includes the following disease prediction modules:
 ## 🛠️ Technology Stack
 
 - **Python 3.x** - Core programming language
+- **Streamlit** - Interactive web application framework
 - **Pandas** - Data manipulation and analysis
 - **NumPy** - Numerical computing
 - **Scikit-Learn** - Machine learning and preprocessing
 - **Matplotlib/Seaborn** - Data visualization
+- **SQLite** - Local database for health records
 
 ## 🚀 Running the Application
 
@@ -53,8 +71,6 @@ The application will open in your browser at `http://localhost:8501`
 - **Medication Reminders**: Track daily medications
 - **Vitals Monitoring**: Monitor heart rate, SpO2, and temperature
 - **Emergency SOS**: Simulated emergency alert system
-
-- **Streamlit** - Web application framework (upcoming)
 
 ## 📁 Project Structure
 
